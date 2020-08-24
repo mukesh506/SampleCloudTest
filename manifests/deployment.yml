@@ -2,14 +2,14 @@ apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: mukeshsamplecloudtest 
-spec:
- selector:
-     matchLabels:
-       app: authors
-       version: v1
-  replicas: 1
-  template:
-    metadata:
+  spec:    
+    replicas: 1
+    selector:
+        matchLabels:
+        app: authors
+        version: v1
+    template:
+     metadata:
       labels:
         app: mukeshsamplecloudtest 
     spec:
