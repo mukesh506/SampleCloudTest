@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: mukeshsamplecloudtest
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 80 
+    selector:
+        app: mukeshsamplecloudtest
